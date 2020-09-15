@@ -44,8 +44,14 @@ const Thought = db.define('thoughts', {
     }
 })
 
+Conversation.hasMany(Message)
+Message.belongsTo(Conversation)
+Message.hasMany(Thought)
+Thought.belongsTo(Message)
+
 module.exports = {
     db, 
     Conversation, 
-    Message
+    Message, 
+    Thought
 }
