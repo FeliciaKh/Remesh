@@ -14,7 +14,23 @@ const Conversation = db.define('conversation', {
     }
 })
 
+const Message = db.define('messages', {
+    text: {
+        type: Sequelize.TEXT, 
+        allowNull: false
+    }, 
+    date: {
+        type: Sequelize.DATE,
+        defaultValue: Date.now()
+    }, 
+    time: {
+        type: Sequelize.TIME, 
+        defaultValue: currentTime()
+    }
+})
+
 module.exports = {
     db, 
-    Conversation
+    Conversation, 
+    Message
 }
