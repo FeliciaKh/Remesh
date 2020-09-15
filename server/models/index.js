@@ -9,7 +9,7 @@ const Conversation = db.define('conversations', {
         allowNull: false
     }, 
     startDate: {
-        type: Sequelize.DATE, 
+        type: Sequelize.DATEONLY, 
         defaultValue: Date.now()
     }
 })
@@ -23,10 +23,6 @@ const Message = db.define('messages', {
         type: Sequelize.DATE,
         defaultValue: Date.now()
     }, 
-    time: {
-        type: Sequelize.TIME, 
-        defaultValue: currentTime()
-    }
 })
 
 const Thought = db.define('thoughts', {
@@ -37,10 +33,6 @@ const Thought = db.define('thoughts', {
     date: {
         type: Sequelize.DATE,
         defaultValue: Date.now()
-    }, 
-    time: {
-        type: Sequelize.TIME, 
-        defaultValue: currentTime()
     }
 })
 
