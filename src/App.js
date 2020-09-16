@@ -12,7 +12,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route exact path='/' component={Input} />
-        <Route exact path='/conversation' component={CreateConversation} />
+        <Route exact path='/conversation' component={Input} />
         {/* <Route path='/conversation/:conversationId' component={SingleConversation} /> */}
       </Switch>
     </Router>

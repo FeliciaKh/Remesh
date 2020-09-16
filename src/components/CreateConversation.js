@@ -1,6 +1,7 @@
-import React, {Component, useState, useEffect} from 'react'
+import React, {Component} from 'react'
 import axios from 'axios'
 import Input from './Input'
+import Message from './Message'
 
 export default class CreateConversation extends Component {
     constructor() {
@@ -31,7 +32,10 @@ export default class CreateConversation extends Component {
 
     render() {
         return (
-            <Input state= {this.state} handleChange= {this.handleChange} handleSubmit= {this.handleSubmit} />
+            <div>
+                <Input state= {this.state} handleChange= {this.handleChange} handleSubmit= {this.handleSubmit} />
+                <Message state= {this.state} handleChange= {this.handleChange} handleSubmit= {this.handleSubmit} />
+            </div>
         )
     }
 }
