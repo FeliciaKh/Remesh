@@ -4,9 +4,11 @@ const Input = (props) => {
     return (
         <div>
             <form onSubmit={props.handleSubmit}>
-                <label htmlFor="conversationTitle">Conversation Title:</label>
-                <input name="conversationTitle" type="text" onChange={props.handleChange} value={props.state.conversationTitle}/>
-                <button type="submit">Submit</button>
+                <div>
+                    <label htmlFor="conversationTitle">Conversation Title:</label>
+                    <input name="conversationTitle" type="text" onChange={props.handleChange} value={props.state}/>
+                    <button type="submit">Submit</button>
+                </div>
             </form>
         </div>
     )

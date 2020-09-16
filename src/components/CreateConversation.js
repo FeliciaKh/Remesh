@@ -31,19 +31,7 @@ export default class CreateConversation extends Component {
 
     render() {
         return (
-            <Form state= {this.state} handleChange= {this.handleChange} handleSubmit= {this.handleSubmit} />
+            <Input state= {this.state} handleChange= {this.handleChange} handleSubmit= {this.handleSubmit} />
         )
     }
 }
-
-// const Conversation = () => {
-//     const [conversation, setConversation] = useState('')
-//     return (
-//         <div>
-//             <h1>Hello World!</h1>
-//             <Input></Input>
-//         </div>
-//     )
-// }
-
-// export default Conversation

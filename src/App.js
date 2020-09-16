@@ -4,7 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import Conversation from './components/CreateConversation';
+import CreateConversation from './components/CreateConversation';
 import Input from './components/Input'
 
 const App = () => {
@@ -12,6 +12,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route exact path='/' component={Input} />
+        <Route exact path='/conversation' component={CreateConversation} />
         {/* <Route path='/conversation/:conversationId' component={SingleConversation} /> */}
       </Switch>
     </Router>
