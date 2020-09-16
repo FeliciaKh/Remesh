@@ -1,6 +1,6 @@
 Felicia's Remesh Take home attempt
 
-The database name is remesh-project, create a datebase with this name before running the server. 
+The database name is remesh-project, create a datebase with this name before doing npm install and running the server. 
 
 You can start the server on its own with the command:
 
